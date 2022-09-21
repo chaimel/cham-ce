@@ -1,0 +1,446 @@
+<!--?php @session_start();
+get_includes('head');
+get_includes('header');
+get_includes('nav');
+get_includes('banner');
+?-->
+<!--?php if ( is_front_page() ) { get_includes('middle'); }?-->
+
+<!DOCTYPE html>
+<!--[if lt IE 10]>      <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 10]>         <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 11]>         <html class="no-js lt-ie11"> <![endif]-->
+<!--[if gt IE 11]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+	<title>Chaimel</title>
+
+
+	<link rel="stylesheet" href="style.min.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/media.min.css">
+	<link rel="stylesheet" href="css/rslides.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/skitter.styles.css" type="text/css" media="all"  />
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon"  href="images/favicon.png">
+
+	<!--?php wp_head(); ?-->
+</head>
+	<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+		<div class="protect-me">
+		<div class="clearfix">
+
+<!-- Header -->
+<header>
+	<div class="wrapper">
+		<div class="header_con">
+			<div class="main_logo">
+			  <a href="<?php //echo get_home_url(); ?>"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a>
+			  <h2>Chaimel Enjambre</h2>
+			</div>
+
+			<div class="head_info">
+				<!-- <div class="header_info">
+					<h2>Contact <span><mark>number</mark></span></h2>
+				</div>
+				<div class="social_media">
+					<ul>
+						<li><a href="https://www.facebook.com" target="_blank"><figure><img src="images/fb-icon.png" alt="facebook"/></figure></a></li>
+						<li><a href="https://www.twitter.com" target="_blank"><figure><img src="images/twitter-icon.png" alt="twitter"/></figure></a></li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+	  <div class="clearfix"></div>
+	</div>
+</header>
+<!-- End Header -->
+
+<!-- Navigation -->
+<div id="nav_area">
+	<div class="nav_toggle_button">
+	<div class="logo_wrap"></div>
+		<div class="toggle_holder">
+			<div class="hamburger hamburger--spin-r">
+			  <div class="hamburger-box">
+				<div class="hamburger-inner"></div>
+			  </div>
+			</div>
+			<small>Menu</small>
+		</div>
+	<div class="clearfix"></div>
+	</div>
+
+	<div class="toggle_right_nav">
+	  <nav class="page_nav">
+			<div class="menu_slide_right">
+				<!-- <a href="<?php //echo get_home_url(); ?>" class="logo_slide_right"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a> -->
+				<h2>Menu</h2>
+				<div class="toggle_holder">
+					<div class="hamburger hamburger--spin-r">
+					  <div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					  </div>
+					</div>
+					<small>Close</small>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="wrapper">
+				<!--?php wp_nav_menu( array( 'container_class' => 'nav-menu', 'theme_location' => 'primary', 'after' => '<span><i class="fa fa-2x">&nbsp;&nbsp;&nbsp;&nbsp;</i></span>') ); ?-->
+				<ul>
+					<li class="current_page_item"><a href="">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#project">Projects</a></li>
+					<!-- <li><a href="">Blog</a></li> -->
+					<li><a href="#contactus">Contact</a></li>
+				</ul>
+			</div>
+	  </nav>
+		<div class="toggle_nav_close"></div>
+	</div>
+</div>
+<!-- End Navigation -->
+
+<!-- Banner -->
+<div id="banner">
+	<div class="wrapper">
+		<div class="bnr_con">
+
+			<!-- <div class="slider">
+				<ul class="rslides">
+					<li><figure><img src="images/slider/1.jpg" alt=""/></figure></li>
+					<li><figure><img src="images/slider/2.jpg" alt=""/></figure></li>
+					<li><figure><img src="images/slider/3.jpg" alt=""/></figure></li>
+				</ul>
+			</div> -->
+
+			
+
+			<div class="bnr_info">
+				<h2>Hello, I'm <small>Chaimel</small> Enjambre. <span>Web Developer</span></h2>
+				<a href="#project">View my work</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- End Banner -->
+
+<!-- Middle -->
+<div id="about">
+	<div class="wrapper">
+		<div class="about_con">
+
+			<div class="about_info">
+				<h2>About Me</h2>
+				<p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+			</div>
+
+
+			<div class="about_boxes">
+
+				<section class="ab_box1">
+					<h2>UX / UI Designer</h2>
+					<p>Adobe XD, Figma</a>
+				</section>
+
+				<section class="ab_box2">
+					<h2>Mobile <span>Development</span></h2>
+					<p>Anroid (Java)</p>
+					
+				</section>
+
+
+				<section class="ab_box3">
+					<h2>Web Development</h2>
+					<p>PHP, MySQL, CSS, SASS, Bootstrap, HTML , JQuery & Wordpress</p>
+				</section>
+
+			</div>
+
+			
+
+		</div>
+	</div>
+</div>
+<!-- End Middle -->
+
+<!-- Main -->
+<div id="main_area">
+	<div class="wrapper">
+		<div class="main_con">
+			<!-- <main>
+				<h1 class="h1_title"><span>Welcome to </span>COMPANYNAME</h1>
+				<p>I'm a Front-End Developer from Philippines. I have serious passion for creating intuitive, dynamic user experiences. Let's make something special.</p>
+			</main>
+
+			<aside class="sidebar">
+				<div class="side_box1">
+					<ul>
+						<li><a href="javascript:;"></a></li>
+						<li><a href="javascript:;"></a></li>
+						<li><a href="javascript:;"></a></li>
+					</ul>
+				</div>
+			</aside> -->
+		</div>
+
+	<div class="clearfix"></div>
+	</div>
+</div>
+<!-- End Main -->
+
+<!-- Bottom -->
+<div id="project">
+	<div class="wrapper">
+		<div class="project_con">
+
+			<div class="project_info">
+				<h2>Projects</h2>
+			</div>
+
+			<div class="project_holder">
+				<div class="project_tabs">
+					<ul class="tab">
+						<li> <a href="javascript:;" class="tablinks" id="defaultOpen" onclick="openAuction(event, 'web')">Web</a> </li>
+						<li> <a href="javascript:;" class="tablinks" onclick="openAuction(event, 'mobile')">Mobile</a> </li>
+						<li> <a href="javascript:;" class="tablinks" onclick="openAuction(event, 'ux-ui')">UX / UI Design</a> </li>
+					</ul>
+					
+				</div>
+				<div id="web" class="project_boxes tabcontent">
+	
+					<section class="proj_box1">
+						<figure class="p-img1"><img src="images/projects/p1.jpg" alt=""/></figure>
+						<div class="proj_info">
+							<h2>Beulahland Christian Academy</h2>
+							<p>https://www.beulahlandjax.org/</p>
+						</div>
+						<a target="_blank" href=""></a>
+					</section>
+
+					<section class="proj_box2">
+						<figure class="p-img1"><img src="images/projects/p2.jpg" alt=""/></figure>
+						<div class="proj_info">
+							<h2>Spark City Smoke and Vape</h2>
+							<p>https://web.link2newsite.com/limelightll/sparkcityon575/</p>
+						</div>
+						<a target="_blank" href="https://web.link2newsite.com/limelightll/sparkcityon575/"></a>
+					</section>
+
+					<section class="proj_box3">
+						<figure class="p-img1"><img src="images/projects/p3.jpg" alt=""/></figure>
+						<div class="proj_info">
+							<h2>Smt Logistics</h2>
+							<p>http://www.smtlg.com/</p>
+						</div>
+						<a target="_blank" href="http://www.smtlg.com/"></a>
+					</section>
+
+					<section class="proj_box4">
+						<figure class="p-img1"><img src="images/projects/p4.jpg" alt=""/></figure>
+						<div class="proj_info">
+							<h2>SalmaStar Fishing Group</h2>
+							<p>https://w3204.proweaversite3.com/</p>
+						</div>
+						<a target="_blank" href="https://w3204.proweaversite3.com/"></a>
+					</section>
+
+
+					<section class="proj_box5">
+						<figure class="p-img1"><img src="images/projects/p5.jpg" alt=""/></figure>
+						<div class="proj_info">
+							<h2>Summerfield Home Care</h2>
+							<p>https://www.summerfieldhomecare.com/</p>
+						</div>
+						<a target="_blank" href="https://www.summerfieldhomecare.com/"></a>
+					</section>
+
+
+					<section class="proj_box6">
+						<figure class="p-img1"><img src="images/projects/p6.jpg" alt=""/></figure>
+						<div class="proj_info">
+							<h2>SkyguideLLC</h2>
+							<p>http://www.skyguidellc.com/</p>
+						</div>
+						<a target="_blank" href="http://www.skyguidellc.com/"></a>
+					</section>
+
+					
+				</div>
+
+				<div id="mobile" class="project_boxes tabcontent">
+
+					<p>No Projects found</p>
+
+				</div>
+				<div id="ux-ui" class="project_boxes tabcontent">
+
+					<p>No Projects found</p>
+					
+				</div>
+
+				<script type="text/javascript">
+				function openAuction(evt, openAuction) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablinks");
+					for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+					}
+					document.getElementById(openAuction).style.display = "flex";
+					evt.currentTarget.className += " active";
+				}
+
+				function myFunction() {
+					var input, filter, ul, li, a, i, txtValue;
+					input = document.getElementById("myInput");
+					filter = input.value.toUpperCase();
+					ul = document.getElementById("auctions");
+					li = ul.getElementsByTagName("section");
+					for (i = 0; i < li.length; i++) {
+						h2 = li[i].getElementsByTagName("h2")[0];
+						txtValue = h2.textContent || h2.innerText;
+						if (txtValue.toUpperCase().indexOf(filter) > -1) {
+							li[i].style.display = "";
+						} else {
+							li[i].style.display = "none";
+						}
+					}
+				}
+				document.getElementById("defaultOpen").click();
+				</script>
+
+				
+				
+				
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="contactus">
+	<div class="wrapper">
+		<div class="contactus_con">
+
+			<div class="testim_info">
+				<h2>Send a Message</h2>
+				
+			</div>
+		
+			<div class="contact_us_form">
+				<form class="btm2_form" method="POST" action="https://formspree.io/f/xaykerqy">
+					<input type="text" name="name" placeholder="*Full Name" required>
+					<input type="email" name="email" placeholder="*Email Address" required>
+					<textarea name="messages" placeholder="Message(s)"></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- End Bottom -->
+
+<!--Footer -->
+<footer>
+<div class="footer_top">
+	<div class="wrapper">
+		<div class="footer_top_con">
+			<!-- <div class="contact_info">
+				<h2>Contact Information</h2>
+				<ul>
+					<li><address>123 Street Name, Lorem Ipsum
+							Orlando, Florida 1234</address>
+							<a href="">View Map and Directions &raquo;</a></li>
+					<li>Phone: <mark>602-358-7106</mark></li>
+					<li>Email: <a href="mailto:noncep@agchurchconsulting.com ">noncep@agchurchconsulting.com</a></li>
+				</ul>
+			</div> -->
+
+			<!-- <div class="footer_logo">
+				<a href="<?php //echo get_home_url(); ?>"><figure><img src="images/footer-logo.png" alt="<?php //echo get_bloginfo('name');?>"></figure></a>
+			</div> -->
+
+				<!-- <div class="footer_nav">
+					<ul>
+						<li class="current_page_item"><a href="index.php">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div> -->
+
+			<div class="social_media">
+					<ul>
+						<li><a href="https://www.linkedin.com/in/chaimel-enjambre-26b5621b6/" target="_blank"><figure><img src="images/linkedin-icon.png" alt="linkedin"/></figure></a></li>
+						<li><a href="https://www.facebook.com/chaimel/" target="_blank"><figure><img src="images/fb-icon.png" alt="facebook"/></figure></a></li>
+						<li><a href="https://www.instagram.com/hoychai_/" target="_blank"><figure><img src="images/insta-icon.png" alt="instagram"/></figure></a></li>
+					</ul>
+			</div>
+
+			<div class="copyright">
+				  <!-- &copy; Copyright
+						<?php
+						$start_year = '2022';
+						$current_year = date('Y');
+						$copyright = ($current_year == $start_year) ? $start_year : $start_year.' - '.$current_year;
+						echo $copyright;
+						?> -->
+				  <span class="footer_comp">Chaimel Enjambre</span>
+				  &copy;2022
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- <div class="footer_btm">
+  <div class="wrapper">
+			<div class="footer_btm_con">
+				
+			</div>
+		</div>
+</div> -->
+</footer>
+
+	<span class="back_top"></span>
+
+  </div> <!-- End Clearfix -->
+  </div> <!-- End Protect Me -->
+
+  <!--?php get_includes('ie');?-->
+
+  <!--
+  Solved HTML5 & CSS IE Issues
+  -->
+  <script src="js/modernizr-custom-v2.7.1.min.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
+
+  <!--
+  Solved Psuedo Elements IE Issues
+  -->
+  <script src="js/calcheight.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.skitter.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  <script src="js/plugins.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--?php wp_footer(); ?-->
+</body>
+</html>
+<!-- End Footer -->
